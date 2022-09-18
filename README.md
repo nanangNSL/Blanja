@@ -20,34 +20,27 @@
 
 <table>
   <tr>
-    <th>Login</th>
-    <th>Register</th>
-    <th>Add Recipe</th>
+    <th>Home</th>
+    <th>My Bag</th>
+    <th>Chekout</th>
      <th>Profile</th>
-      <th>Alert</th>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/45787278/190203782-b7d5eb80-8977-49d8-947b-d7f89ef452a7.png" /></td>
-    <td><img src="https://user-images.githubusercontent.com/45787278/190203797-da0d04ab-b3dd-4f76-8299-0245df8c38b3.png" /></td>
-    <td><img src="https://user-images.githubusercontent.com/45787278/190203797-da0d04ab-b3dd-4f76-8299-0245df8c38b3.png" /></td>
-      <td><img src="https://user-images.githubusercontent.com/45787278/190203808-4246e777-2490-432a-b412-3d6d29aaf737.png" /></td>
-      <td><img src="https://user-images.githubusercontent.com/45787278/190203814-b8f70054-b340-4028-ba85-dee0d50b1574.png" /></td>
+    <td><img src="https://user-images.githubusercontent.com/45787278/190924112-3f2b017e-e8d6-4f95-9d0e-d981635996ea.png" /></td>
+    <td><img src="https://user-images.githubusercontent.com/45787278/190924114-882ac457-f192-400d-9e2f-45d995ba8e39.png" /></td>
+      <td><img src="https://user-images.githubusercontent.com/45787278/190924116-8468f619-cced-4258-b6a1-035a3da4a942.png" /></td>
+      <td><img src="https://user-images.githubusercontent.com/45787278/190924109-92d969f7-4c14-444c-aa9f-a3d8f2d0cd69.png" /></td>
   </tr>
 </table>
 <blockquote>Note: Click to zoom image</blockquote>
 
 
 
+
 <h3 id=built>Made With</h3>
 <ul>
-  <li>Express JS</li>
-   <li>PostgreSQL(databases)</li>
-   <li>JOI</li>
-   <li>Axios</li>
-   <li>Multer</li>
-   <li>JWT token</li>
-   <li>Redis AWS Cloud</li>
-  <li>Cloudinary (For media storage)</li>
+  <li>React JS</li>
+   <li>Material Ui</li>
   <li>Etc.</li>
 </ul>
 <h3 id=getting>Getting started</h3>
@@ -62,11 +55,6 @@
        <pre><code>node -v</code></pre>
         <pre><code>npm -v</code></pre>
        <p>In this project I use <code>version v16.15.1</code></p> 
-       <li>Set up multiple accounts for configuration
-       <ul>
-         <li><a href="https://cloudinary.com/">Cloudinary<a></li>
-         <li><a href="https://app.redislabs.com/#/login">Redis Cloud<a></li>
-         </ul>
        </li>
      </ul>
   </li>
@@ -75,30 +63,21 @@
       <ul>
         <li>Clone project
           <ul>
-             <li>Backend (server) || or you can use an endpoint server 👉<code><a href="https://motaro.herokuapp.com">link<a></code> 
-             <pre><code>git clone -b deployment https://github.com/nanangNSL/Motaro.git</code> </pre>
-             </li>
             <li>Client
-             <pre><code>git clone -b add-responsive https://github.com/nanangNSL/Motaro.git</code> </pre>
+             <pre><code>git clone https://github.com/nanangNSL/Blanja.git</code> </pre>
              </li>
           </ul>
         </li>
         <li>Install all dependencies
              <pre><code>npm install</code> </pre>
             </li>
-       <li>Settup <code>.env.example</code></li>
-         <code>Fill all secret keys</code>
-          <li>Settup database in doc/motaro.psql </li>
-             <pre><code>psql -U postgres -p 5432 -h localhost -d db_name -f motaro.psql</code> </pre>
-         <li>Run project</li>
-            <pre><code>npm start</code></pre>
       </ul>
    </li>
 </ul> 
     
 <h3 id=License>License</h3>
 <ul>
-  <li><code><a href="https://github.com/nanangNSL/Motaro/blob/main/LICENSE">MIT</a></code></li>
+  <li><code><a href="https://github.com/nanangNSL/Blanja/blob/main/LICENSE">MIT</a></code></li>
 </ul>
 <p>Happy code!☕</p>
 
