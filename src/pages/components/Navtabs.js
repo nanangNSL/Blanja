@@ -1,28 +1,42 @@
-import * as React from "react";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
-import { Container } from "@mui/material";
+import * as React from 'react';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+import Stack from '@mui/material/Stack';
+import Container from '@mui/material/Container';
 
-export default function Navtabs() {
-  const [value, setValue] = React.useState(0);
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+function handleClick(event) {
+  event.preventDefault();
+  console.info('You clicked a breadcrumb.');
+}
+
+export default function CustomSeparator() {
+  const breadcrumbs = [
+    <Link underline="hover" key="1" color="inherit" href="/" onClick={handleClick}>
+      Home
+    </Link>,
+    <Link
+      underline="hover"
+      key="2"
+      color="inherit"
+      href="/material-ui/getting-started/installation/"
+      onClick={handleClick}
+    >
+      Category
+    </Link>,
+    <Typography key="3" color="text.primary">
+      T Shirt
+    </Typography>,
+  ];
 
   return (
-    <Container>
-      <Box sx={{ width: "100%" }}>
-        <Tabs
-          onChange={handleChange}
-          value={value}
-          aria-label="Tabs where each tab needs to be selected manually"
-        >
-          <Tab label="Home >" />
-          <Tab label="Category >" />
-          <Tab label="T-Shirt" />
-        </Tabs>
-      </Box>
+    <Container sx={{ marginTop: '2vh'}}>
+       <Stack spacing={2}>
+      <Breadcrumbs separator="›" aria-label="breadcrumb">
+        {breadcrumbs}
+      </Breadcrumbs>
+    </Stack>
     </Container>
+   
   );
 }
